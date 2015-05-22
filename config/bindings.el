@@ -8,11 +8,15 @@
 ;; http://eschulte.me/emacs-starter-kit/starter-kit-bindings.html
 (global-set-key "\C-x\C-g" 'magit-status)
 
+
 ;; ;; https://github.com/briancarper/dotfiles/blob/master/.emacs
-;; (global-set-key "\C-cl" 'org-store-link)
-;; (global-set-key "\C-cc" 'org-capture)
-;; (global-set-key "\C-ca" 'org-agenda)
-;; (global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key "\C-cr" 'remember)
+(global-set-key (kbd "C-c v") 'org-velocity-read)
+
 
 ;; ;; Undo
 ;; (require 'undo-tree)

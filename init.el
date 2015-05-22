@@ -5,11 +5,15 @@
 
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
 
 (defun load-.emacs ()
   "Reload .emacs"
   (interactive)
   (load "~/.live-packs/jwalsh-pack/init.el"))
 
-;; Load bindings config
+(require 'helm-config)
+
 (live-load-config-file "bindings.el")
